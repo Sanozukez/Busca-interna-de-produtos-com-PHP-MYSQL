@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>TESTE BUSCA</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    </head>
+    <body>
+        <h1> Pesquisar </h1>
+        <form method="POST" action="">
+            <label> Produto </label>
+            <input type="text" placeholder="Escreva o nome do produto." name="busca" id="busca">
+        </form>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jqueryui/1.12.1/jquery-ui.min.js"></script>  
+    
+    <script>
+        $(function(){
+            $("#busca").autocomplete({
+                source: 'busca_msg.php'
+            });
+        });       
+    </script>
+    </body>
+</html>
